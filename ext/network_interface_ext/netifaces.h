@@ -72,6 +72,7 @@ static int af_to_len(int af)
 {
   switch (af) 
   {
+
     case AF_INET: return sizeof (struct sockaddr_in);
 #if defined(AF_INET6) && HAVE_SOCKADDR_IN6
     case AF_INET6: return sizeof (struct sockaddr_in6);
