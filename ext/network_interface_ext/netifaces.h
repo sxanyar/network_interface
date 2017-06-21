@@ -5,6 +5,8 @@
 #  include <net/if.h>
 #  include <netdb.h>
 
+#    include <netinet/in.h>
+
 #  if HAVE_SOCKET_IOCTLS
 #    include <sys/ioctl.h>
 #    include <netinet/in.h>
