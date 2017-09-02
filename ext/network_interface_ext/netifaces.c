@@ -217,7 +217,7 @@ rbnetifaces_s_addresses (VALUE class, VALUE dev)
   VALUE result2;
 #elif HAVE_SOCKET_IOCTLS
   int sock;
-  struct CNAME(ifreq) ifr;
+  struct CNAME(ifreq) *ifr;
   char buffer[256];
   int is_p2p = FALSE;
   VALUE rbaddr = Qnil;
